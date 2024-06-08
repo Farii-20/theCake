@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		.head
+		{
+			width: 100%;
+			height: 400px;
+			background-color: darkred;
+			background-image: url("banner2.png");
+			background-size: cover;
+		}
+
+		nav
+		{
+			width: 100%;
+			height: 50px;
+			background-color: #a67882;
+			border: solid 3px #e9d5aa;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+			margin-top: -18px;
+		}
+
+		.logo
+		{
+			width: 200px;
+			height: 200px;
+			background-color: #e3a7a6;
+			margin-left: 42.09%;
+			border: 1px solid #e3a7a6;
+			border-radius: 50%;
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.pic
+		{
+			border: 1px solid #ad5857;
+			border-radius: 50%;
+		}
+
+		.leftDiv
+		{
+			float: left;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul .leftList
+		{
+			width: 120px;
+			height: 25px;
+			margin-left: 15px;
+			display: inline-block;
+			margin-right: 10px;
+			/*border-left: double 4px #e9d5aa;
+			border-right: double 4px #e9d5aa;*/
+			text-align: center;
+			transition: 0.2s linear;
+		}
+
+		nav div ul .leftList .leftLink
+		{
+			color: #e9d5aa;
+			display: block;
+			text-decoration: none;
+		}
+
+		nav div ul .leftList:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		.rightDiv
+		{
+			float: right;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul li
+		{
+			width: 130px;
+			height: 25px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			border-left: 4px double #e9d5aa;
+			border-right: 4px double #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		nav div ul li a
+		{
+			color: #e9d5aa;
+			text-decoration: none;
+			display: block;
+		}
+
+		nav div ul li a:hover
+		{
+			transform: scale(1.1);
+		}
+
+		nav div ul li:hover
+		{
+			font-style: italic;
+/*			border-bottom: solid 3px #e9d5aa;*/
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		nav div ul .rightInLink
+		{
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+
+		.rightInInLink
+		{
+			margin-top: 2px;
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		.rightInInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1)
+		}
+
+		nav div ul .rightInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1);
+		}
+
+		.rightLink:hover
+		{
+			color: #a67882;
+		}
+
+		nav div ul li ul
+		{
+			margin-left: -42px;
+			display: none;
+			position: relative;
+			z-index: 1;
+		}
+
+		nav div ul li:hover ul
+		{
+			display: block;
+			
+		}
+
+
+		.first
+		{
+			width: 100%;
+			height: 550px;
+			margin-top: 150px;
+			
+		}
+
+		.firstRight
+		{
+			width: 500px;
+			height: 400px;
+			float: right;
+			background-color: white;
+			border-top: double 5px #a67882;
+			border-bottom: double 5px #a67882;
+			margin-right: 60px;
+			border-top-left-radius: 40px;
+			border-bottom-right-radius: 40px;
+		}
+
+		.circle
+		{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin-left: 50%;
+			background-color: white;
+			margin-top: 25px;
+			border: 4px double #a67882;
+			padding-top: 0.5px;
+		}
+
+		.num
+		{
+			font-weight: bold;
+			font-size: 0.5cm;
+			color: #a67882;
+			font-family: 'Bebas Neue', sans-serif;
+			text-align: center;
+			margin-top: -2px;
+			color: #c3a4ab;
+		}
+
+		.numOne
+		{
+			color: black;
+			text-align: center;
+			font-family: 'Bebas Neue', sans-serif;
+		}
+
+		.firstLeft
+		{
+			width: 500px;
+			height: 450px;
+			background-image: url("back.png");
+			float: left;
+			margin-left: 50px;
+			margin-top: -40px;
+		}
+
+		.headingLeft
+		{
+			font-family: 'Dancing Script', cursive;
+			font-size: 2em;
+			text-align: center;
+			color: black;
+		}
+
+		.top
+		{
+			color:#a67882;
+			font-weight: bolder;
+		}
+
+		.leftPara
+		{
+			font-family: 'Caveat', cursive;
+			color: black;
+			font-size: 1.5em;
+			text-align: center;
+		}
+
+		.one
+		{
+			width: 100%;
+			height: 768px;
+			background-image: url("22.png");
+		}
+
+		.inner
+		{
+			width: 500px;
+			height: 400px;
+			background-color: #e5e6e4;
+			float: left;
+			margin-top: 200px;
+			margin-left: 80px;
+			border-radius: 20px;
+		}
+
+		.heading
+		{
+			text-align: center;
+			margin-top: 70px;
+			color: #a67882;
+			font-family: 'Dancing Script', cursive;
+			font-weight: bold;
+			text-decoration: underline overline;
+			font-size: 0.5in;
+		}
+
+		.para
+		{
+			text-align: center;
+			padding-top: 20px;
+			font-family: 'Bebas Neue', sans-serif;
+			padding: 10px;
+		}
+		</style>
+</head>
+<body>
+
+	<div class="row">
+
+		<div class="container">
+
+			<div class="head col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+			</div>
+
+		</div>
+
+	</div>
+	<br>
+
+	<nav>
+		
+		<div class="logo">
+
+			<img src="newlogo.jpg" class="pic" width="200px" height="200px" >
+
+		</div>
+
+
+		<div class="leftDiv">
+
+			<ul>
+				<li class="leftList">
+					<a href="index.html" class="leftLink">Home</a>
+				</li>
+
+				<li class="leftList">
+					<a href="about.html" class="leftLink">About Us</a>
+				</li>
+
+				<li class="leftList">
+					<a href="contact.html" class="leftLink">Contact Us</a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="rightDiv">
+			<ul>
+				<li class="rightList">
+					<a href="all.html" class="rightxLink">All Products</a>
+				</li>
+
+				<li class="rightList">
+					<a href="category.html" class="rightxLink">Products by Event</a>
+
+					<ul>
+						<li class="rightInInLink"><a href="birthday.html" class="rightLink">Birthday Cakes</a></li>
+
+						<li class="rightInLink"><a href="anniversary.html" class="rightLink">Anniversary Cakes</a></li>
+
+						<li class="rightInLink"><a href="engagement.html" class="rightLink">Engagement Cakes</a></li>
+
+						<li class="rightInLink"><a href="bride.html" class="rightLink">Bridal Shower</a></li>
+
+						<li class="rightInLink"><a href="groom.html" class="rightLink">Groom Shower</a></li>
+
+						<li class="rightInLink"><a href="wed.html" class="rightLink">Wedding Cakes</a></li>
+					</ul>
+				</li>
+
+				<li class="rightList">
+					<a href="map.html" class="righxtLink">Site Map</a>
+				</li>
+			</ul>
+			
+		</div>
+
+	</nav>
+
+	<div class="first">
+
+		<div class="firstRight">
+			
+			<div class="circle">
+				
+				<h1 class="num">1</h1>
+				
+			</div>
+
+			<p class="numOne">Fresh and Festive delights:<br>Enjoy our cakes, always fresh and perfect for any celebration.</p>
+
+			<div class="circle">
+				
+				<h1 class="num">2</h1>
+				
+			</div>
+
+			<p class="numOne">Simply delicious comfort:<br>Dive into the joy of comfort bites each one a simple delight.</p>
+
+			<div class="circle">
+				
+				<h1 class="num">3</h1>
+				
+			</div>
+
+			<p class="numOne">Delightful choices await:<br>Make your selection a delight with our delicious offerings.</p>
+
+		</div>
+
+		<div class="firstLeft">
+
+			<h1 class="headingLeft"><span class="top">"Sweeter Moments Await:</span> Indulge in our love crafted Cakes!"</h1>
+
+			<p class="leftPara">
+				Our cake shop, where cakes are made up of love. You feel another level of tranquility in every bite. Our cakes tailored with fresh ingredients. Our <i>Belgium chochlate </i>helps you to forget your tantrums, because we believe if you feel downie, eat a brownie.
+				<br>
+				We care about your busy schedule and deliver your order at your doorsteps.
+				<br>
+				Our customer service department always ready to help you if you face any query.  
+			</p>
+			
+		</div>
+	
+	</div>
+
+	<div class="one">
+
+		<div class="inner">
+			
+
+			<h1 class="heading">History of Cake</h1>
+
+			<p class="para">	The term "cake" has a long history. The word itself is <i>Viking </i> origin, from the
+
+				<i>Old Norse </i>word "kaka".
+
+				The ancient Greeks called cake “plakous”, which was derived from the word
+				for "flat", (plakoeis). It was baked using flour mixed with eggs, milk, nuts, and
+				honey. They also had a cake called "satura", which was a flat, heavy cake.
+				During the Roman period, the name for cake became "placenta", which was
+				derived from the Greek term. A placenta was baked on a pastry base or inside a pastry case.
+
+			</p>
+		</div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		.head
+		{
+			width: 100%;
+			height: 400px;
+			background-color: darkred;
+			background-image: url("banner2.png");
+			background-size: cover;
+		}
+
+		nav
+		{
+			width: 100%;
+			height: 50px;
+			background-color: #a67882;
+			border: solid 3px #e9d5aa;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+			margin-top: -18px;
+		}
+
+		.logo
+		{
+			width: 200px;
+			height: 200px;
+			background-color: #e3a7a6;
+			margin-left: 42.09%;
+			border: 1px solid #e3a7a6;
+			border-radius: 50%;
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.pic
+		{
+			border: 1px solid #ad5857;
+			border-radius: 50%;
+		}
+
+		.leftDiv
+		{
+			float: left;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul .leftList
+		{
+			width: 120px;
+			height: 25px;
+			margin-left: 15px;
+			display: inline-block;
+			margin-right: 10px;
+			/*border-left: double 4px #e9d5aa;
+			border-right: double 4px #e9d5aa;*/
+			text-align: center;
+			transition: 0.2s linear;
+		}
+
+		nav div ul .leftList .leftLink
+		{
+			color: #e9d5aa;
+			display: block;
+			text-decoration: none;
+		}
+
+		nav div ul .leftList:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		.rightDiv
+		{
+			float: right;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul li
+		{
+			width: 130px;
+			height: 25px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			border-left: 4px double #e9d5aa;
+			border-right: 4px double #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		nav div ul li a
+		{
+			color: #e9d5aa;
+			text-decoration: none;
+			display: block;
+		}
+
+		nav div ul li a:hover
+		{
+			transform: scale(1.1);
+		}
+
+		nav div ul li:hover
+		{
+			font-style: italic;
+/*			border-bottom: solid 3px #e9d5aa;*/
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		nav div ul .rightInLink
+		{
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+
+		.rightInInLink
+		{
+			margin-top: 2px;
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		.rightInInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1)
+		}
+
+		nav div ul .rightInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1);
+		}
+
+		.rightLink:hover
+		{
+			color: #a67882;
+		}
+
+		nav div ul li ul
+		{
+			margin-left: -42px;
+			display: none;
+			position: relative;
+			z-index: 1;
+		}
+
+		nav div ul li:hover ul
+		{
+			display: block;
+			
+		}
+
+		.mainForm
+		{
+			width: 70%;
+			height: 1400px;
+			background-color: floralwhite;
+			border: 5px double #a67882;
+			margin-left: 16%;
+		}
+
+		.top
+		{
+			width: 99.5%;
+			height: 200px;
+			background-color: #a67882;
+			padding-top: 40px;
+			border: 1px solid floralwhite;
+			margin-left: 1px;
+		}
+
+		.inTouch
+		{
+			color: #73110a;
+			margin-left: 80px;
+			font-size: 3em;
+			float: left;
+		}
+
+		.eleven
+		{
+			display: inline-block;
+			float: right;
+			margin-right: 5%;
+			padding-top: 1.5%;
+		}
+
+		.leftone
+		{
+			width: 450px;
+			height: 950px;
+/*			background-color: black;*/
+			float: left;
+		}
+
+		.rightone
+		{
+			width: 450px;
+			height: 950px;
+/*			background-color: red;*/
+			float: right;
+			margin-right: 20px;
+		}
+
+		.formOne
+		{
+			margin-left: 100px;
+			float: left;
+			font-size: 1.5em;
+			color: #73110a;
+		}
+
+		.check
+		{
+			color: #73110a;
+			font-size: 1em;
+		}
+
+		.formIn
+		{
+			margin-left: 100px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			width: 300px;
+			height: 20px;
+			background-color: #edd4ca;
+			border-bottom: 1.5px solid #73110a;
+			float: left;
+		}
+
+		.formIn:hover
+		{
+			border: 1.5px solid #73110a;
+		}
+
+
+		.submit
+		{
+			margin-left: 380px;
+			width: 200px;
+			height: 50px;
+			font-size: 1.1em;
+			color: #edd4ca;
+			background-color: #73110a;
+			transition: 0.2s linear;
+		}
+
+		.submit:hover
+		{
+			color: #73110a;
+			background-color: #edd4ca;
+			transition: 0.3s linear;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="head">
+		
+	</div>
+	<br>
+
+
+	<nav>
+		
+		<div class="logo">
+
+			<img src="newlogo.jpg" class="pic" width="200px" height="200px" >
+
+		</div>
+
+
+		<div class="leftDiv">
+
+			<ul>
+				<li class="leftList">
+					<a href="index.html" class="leftLink">Home</a>
+				</li>
+
+				<li class="leftList">
+					<a href="about.html" class="leftLink">About Us</a>
+				</li>
+
+				<li class="leftList">
+					<a href="contact.html" class="leftLink">Contact Us</a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="rightDiv">
+			<ul>
+				<li class="rightList">
+					<a href="all.html" class="rightxLink">All Products</a>
+				</li>
+
+				<li class="rightList">
+					<a href="category.html" class="rightxLink">Products by Event</a>
+
+					<ul>
+						<li class="rightInInLink"><a href="birthday.html" class="rightLink">Birthday Cakes</a></li>
+
+						<li class="rightInLink"><a href="anniversary.html" class="rightLink">Anniversary Cakes</a></li>
+
+						<li class="rightInLink"><a href="engagement.html" class="rightLink">Engagement Cakes</a></li>
+
+						<li class="rightInLink"><a href="bride.html" class="rightLink">Bridal Shower</a></li>
+
+						<li class="rightInLink"><a href="groom.html" class="rightLink">Groom Shower</a></li>
+
+						<li class="rightInLink"><a href="wed.html" class="rightLink">Wedding Cakes</a></li>
+					</ul>
+				</li>
+
+				<li class="rightList">
+					<a href="map.html" class="righxtLink">Site Map</a>
+				</li>
+			</ul>
+			
+		</div>
+
+	</nav>
+
+
+	<br><br><br><br>
+
+	<div class="mainForm">
+
+		<div class="top">
+		
+		<h1 class="inTouch" style="font-size: 1.5cm;">Cake form</h1>
+		<img src="cakelogo.png" width="150px" height="150px" class="eleven">
+
+		</div>
+
+
+		<br><br><br>
+		<div class="leftone">
+			<form>
+
+				<label class="formOne">1. Choose a cake </label>
+				<br><br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Chocolate</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Vanilla</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Strawberry</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Any other (please mention)</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">3. Choose a shape </label>
+				<br><br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Square</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Circle</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Rectangle</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Any other (please mention)</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">5. Servings</label>
+				<br><br>
+				<input type="number" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">7. First Name</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">9. Country</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">11. Email</label>
+				<br><br>
+				<input type="email" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">13. Address</label>
+				<br><br>
+				<input type="text" class="formIn" style="height: 100px">
+
+
+
+			</form>
+		</div>
+
+		<div class="rightone">
+			
+			<form>
+
+				<label class="formOne">2. Choose the filling </label>
+				<br><br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Chocolate</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Cream Cheese</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Butter cream</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Any other (please mention)</label>
+				<br><br>
+				<input type="text" class="formIn"> 
+
+				<br><br><br>
+
+				<label class="formOne">4. Choose the icing </label>
+				<br><br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Fondant</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Whipped Cream</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Royal icing</label>
+
+				<br>
+
+				<input type="checkbox" name="opt1" style="margin-left: 100px;">	
+				<label for="opt1" class="check">Any other (please mention)</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">6. Item No. </label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">8. Last Name</label>
+				<br><br>
+				<input type="text" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">10. Phone Number</label>
+				<br><br>
+				<input type="tel" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">12. Date to be delivered</label>
+				<br><br>
+				<input type="date" class="formIn">
+
+				<br><br><br>
+
+				<label class="formOne">14. Special Instructions (if any)</label>
+				<br><br>
+				<input type="text" class="formIn" style="height: 100px">
+
+
+
+			</form>
+		</div>
+
+
+
+		<a href="thank.html" target="_blank">
+
+    	<button class="submit">Bake the Cake</button>
+		</a>
+
+	</div>
+
+</body>
+</html>

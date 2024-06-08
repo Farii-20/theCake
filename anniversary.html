@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+
+
+		
+		nav
+		{
+			width: 100%;
+			height: 50px;
+			background-color: #a67882;
+			border: solid 3px #e9d5aa;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 200px;
+			border-top-left-radius: 20px;
+			margin-top: 155px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.logo
+		{
+			width: 200px;
+			height: 200px;
+			background-color: #e3a7a6;
+			margin-left: -7px;
+			border: 1px solid #e3a7a6;
+			border-radius: 50%;
+			margin-top: -155px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.pic
+		{
+			border: 1px solid #ad5857;
+			border-radius: 50%;
+		}
+
+		.leftDiv
+		{
+/*			float: left;*/
+			margin-top: -50px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul .leftList
+		{
+			width: 120px;
+			height: 25px;
+			margin-left: 37px;
+			display: inline-block;
+			margin-right: 10px;
+			border-left: double 4px #e9d5aa;
+			border-right: double 4px #e9d5aa;
+			text-align: center;
+		}
+
+		.leftxList
+		{
+			width: 120px;
+			height: 25px;
+			margin-left: 220px;
+			display: inline-block;
+			margin-right: 10px;
+			border-left: double 4px #e9d5aa;
+			border-right: double 4px #e9d5aa;
+			text-align: center;
+		}
+
+		.leftxList:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+		}
+
+
+		nav div ul .leftList .leftLink
+		{
+			color: #e9d5aa;
+			display: block;
+			text-decoration: none;
+		}
+
+		nav div ul .leftList:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+		}
+
+		.rightDiv
+		{
+			float: right;
+			margin-top: -40px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul li
+		{
+			width: 130px;
+			height: 25px;
+			background-color: #a67882;
+			margin-right: 45px;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			border-left: 4px double #e9d5aa;
+			border-right: 4px double #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		nav div ul li a
+		{
+			color: #e9d5aa;
+			text-decoration: none;
+			display: block;
+		}
+
+		nav div ul li a:hover
+		{
+			transform: scale(1.1);
+		}
+
+		nav div ul li:hover
+		{
+			font-style: italic;
+/*			border-bottom: solid 3px #e9d5aa;*/
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+
+		}
+		nav div ul .rightInLink
+		{
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+
+		.rightInInLink
+		{
+			margin-top: 2px;
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		.rightInInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1)
+		}
+
+		nav div ul .rightInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1);
+		}
+
+		.rightLink:hover
+		{
+			color: #a67882;
+		}
+
+		nav div ul li ul
+		{
+			margin-left: -42px;
+			display: none;
+			position: relative;
+			z-index: 1;
+		}
+
+		nav div ul li:hover ul
+		{
+			display: block;
+			
+		}
+
+		.section
+		{
+			width: 100%;
+			height: 1000px;
+			background-image: url(newback.png);
+			margin-top: -211px;
+		}
+
+		.section2
+		{
+			width: 100%;
+			height: 500px;
+			background-image: url(newback2.png);
+		}
+
+
+		.divOne
+		{
+			width: 250px;
+			height: 450px;
+			background-color: #a67882;
+			float: left;
+			margin-top: 120px;
+			margin-left: 55px;
+			margin-right: 10px;
+			border-radius: 10px;
+			border: 5px double #e9d5aa;
+		}
+
+		.divIn
+		{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+			margin: 25px;
+		}
+
+		.name
+		{
+			font-size: 1.5em;
+/*			font-family: Dancing Script;*/
+			color: #e9d5aa;
+/*			color: black;*/
+			text-align: center;
+		}
+
+		.detail
+		{
+			font-size: 1.6em;
+			font-family: Dancing Script;
+			color: black;
+			text-align: center;
+		}
+
+		.order
+		{
+			margin-left: 30%;
+			width: 100px;
+			height: 30px;
+			margin-top: -10px;
+			background-color: #e9d5aa;
+			color: #a67882;
+			border: none;
+			font-weight: bold;
+			font-family: cursive;
+		}
+
+		</style>
+
+</head>
+<body>
+
+	<nav>
+		
+		<div class="logo">
+
+			<img src="newlogo.jpg" class="pic" width="200px" height="200px" >
+
+		</div>
+
+
+		<div class="leftDiv">
+
+			<ul>
+				<li class="leftxList">
+					<a href="index.html" class="leftLink">Home</a>
+				</li>
+
+				<li class="leftList">
+					<a href="about.html" class="leftLink">About Us</a>
+				</li>
+
+				<li class="leftList">
+					<a href="contact.html" class="leftyLink">Contact Us</a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="rightDiv">
+			<ul>
+				<li class="rightList">
+					<a href="all.html" class="rightxLink">All Products</a>
+				</li>
+
+				<li class="rightList">
+					<a href="category.html" class="rightxLink">Products by Event</a>
+
+					<ul>
+						<li class="rightInInLink"><a href="birthday.html" class="rightLink">Birthday Cakes</a></li>
+
+						<li class="rightInLink"><a href="anniversary.html" class="rightLink">Anniversary Cakes</a></li>
+
+						<li class="rightInLink"><a href="engagement.html" class="rightLink">Engagement Cakes</a></li>
+
+						<li class="rightInLink"><a href="bride.html" class="rightLink">Bridal Shower</a></li>
+
+						<li class="rightInLink"><a href="groom.html" class="rightLink">Groom Shower</a></li>
+
+						<li class="rightInLink"><a href="wed.html" class="rightLink">Wedding Cakes</a></li>
+					</ul>
+				</li>
+
+				<li class="rightList">
+					<a href="map.html" class="righxtLink">Site Map</a>
+				</li>
+			</ul>
+			
+		</div>
+
+	</nav>
+
+	<div class="section">
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck9.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Chochlate Brownie </h1> -->
+
+			
+			<h3 class="detail">Item Code: #131</h3>
+			<h3 class="detail">Rs. 2000</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+			
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck10.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Fudge Brownie </h1> -->
+
+			
+			<h3 class="detail">Item Code: #132</h3>
+			<h3 class="detail">Rs. 2000</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+			
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck11.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Nutella Cheesecake Brownie </h1> -->
+
+			
+			<h3 class="detail">Item Code: #133</h3>
+			<h3 class="detail">Rs. 2000</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+			
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck12.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Ferrero Rocher Brownie Bites </h1> -->
+
+			
+			<h3 class="detail">Item Code: #134</h3>
+			<h3 class="detail">Rs. 2500</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck13.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Ferrero Rocher Brownie Bites </h1> -->
+
+			
+			<h3 class="detail">Item Code: #135</h3>
+			<h3 class="detail">Rs. 2200</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+
+			
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck14.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Ferrero Rocher Brownie Bites </h1> -->
+
+			
+			<h3 class="detail">Item Code: #136</h3>
+			<h3 class="detail">Rs. 2500</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+
+
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck15.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Ferrero Rocher Brownie Bites </h1> -->
+
+			
+			<h3 class="detail">Item Code: #137</h3>
+			<h3 class="detail">Rs. 2500</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+
+
+		</div>
+
+		<div class="divOne">
+
+			<div class="divIn">
+
+				<img src="ck16.png" width="200px" height="200px">
+				
+			</div>
+
+			<!-- <h1 class="name">Ferrero Rocher Brownie Bites </h1> -->
+
+			
+			<h3 class="detail">Item Code: #138</h3>
+			<h3 class="detail">Rs. 2200</h3>
+		
+			<a href="formcake.html" target="_blank">
+			<input type="submit" value="Order" class="order">
+			</a>
+
+		</div>
+		
+	</div>
+
+	<div class="section2">
+		
+	</div>
+
+</body>
+</html>

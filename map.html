@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		.head
+		{
+			width: 100%;
+			height: 400px;
+			background-color: darkred;
+			background-image: url("banner2.png");
+			background-size: cover;
+		}
+
+		nav
+		{
+			width: 100%;
+			height: 50px;
+			background-color: #a67882;
+			border: solid 3px #e9d5aa;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+			margin-top: -18px;
+		}
+
+		.logo
+		{
+			width: 200px;
+			height: 200px;
+			background-color: #e3a7a6;
+			margin-left: 42.09%;
+			border: 1px solid #e3a7a6;
+			border-radius: 50%;
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.pic
+		{
+			border: 1px solid #ad5857;
+			border-radius: 50%;
+		}
+
+		.leftDiv
+		{
+			float: left;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul .leftList
+		{
+			width: 120px;
+			height: 25px;
+			margin-left: 15px;
+			display: inline-block;
+			margin-right: 10px;
+			/*border-left: double 4px #e9d5aa;
+			border-right: double 4px #e9d5aa;*/
+			text-align: center;
+			transition: 0.2s linear;
+		}
+
+		nav div ul .leftList .leftLink
+		{
+			color: #e9d5aa;
+			display: block;
+			text-decoration: none;
+		}
+
+		nav div ul .leftList:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		.rightDiv
+		{
+			float: right;
+			margin-top: -105px;
+		}
+
+		nav div ul
+		{
+			list-style-type: none;
+		}
+
+		nav div ul li
+		{
+			width: 130px;
+			height: 25px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			border-left: 4px double #e9d5aa;
+			border-right: 4px double #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		nav div ul li a
+		{
+			color: #e9d5aa;
+			text-decoration: none;
+			display: block;
+		}
+
+		nav div ul li a:hover
+		{
+			transform: scale(1.1);
+		}
+
+		nav div ul li:hover
+		{
+			font-style: italic;
+/*			border-bottom: solid 3px #e9d5aa;*/
+			transition: 0.2s linear;
+			/*border: solid 2px #e9d5aa;
+			border-radius: 10px;*/
+		}
+
+		nav div ul .rightInLink
+		{
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+
+		.rightInInLink
+		{
+			margin-top: 2px;
+			width: 130px;
+			height: 30px;
+			background-color: #a67882;
+			margin-right: 35px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			border: 2px solid #e9d5aa;
+/*			border-radius: 10px;*/
+			transition: 0.1s linear;
+		}
+
+		.rightInInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1)
+		}
+
+		nav div ul .rightInLink:hover
+		{
+			font-style: italic;
+			transition: 0.2s linear;
+			background-color: #e9d5aa;
+			border-color: #a67882;
+			font-weight: bold;
+			transform: scale(1.1);
+		}
+
+		.rightLink:hover
+		{
+			color: #a67882;
+		}
+
+		nav div ul li ul
+		{
+			margin-left: -42px;
+			display: none;
+			position: relative;
+			z-index: 1;
+		}
+
+		nav div ul li:hover ul
+		{
+			display: block;
+			
+		}
+
+		.first
+		{
+			width: 100%;
+			height: 500px;
+/*			background-color: mediumpurple;*/
+		}
+	</style>
+</head>
+<body>
+
+	<div class="head">
+		
+	</div>
+	<br>
+
+	<nav>
+		
+		<div class="logo">
+
+			<img src="newlogo.jpg" class="pic" width="200px" height="200px" >
+
+		</div>
+
+
+		<div class="leftDiv">
+
+			<ul>
+				<li class="leftList">
+					<a href="index.html" class="leftLink">Home</a>
+				</li>
+
+				<li class="leftList">
+					<a href="about.html" class="leftLink">About Us</a>
+				</li>
+
+				<li class="leftList">
+					<a href="contact.html" class="leftLink">Contact Us</a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="rightDiv">
+			<ul>
+				<li class="rightList">
+					<a href="all.html" class="rightxLink">All Products</a>
+				</li>
+
+				<li class="rightList">
+					<a href="category.html" class="rightxLink">Products by Event</a>
+
+					<ul>
+						<li class="rightInInLink"><a href="birthday.html" class="rightLink">Birthday Cakes</a></li>
+
+						<li class="rightInLink"><a href="anniversary.html" class="rightLink">Anniversary Cakes</a></li>
+
+						<li class="rightInLink"><a href="engagement.html" class="rightLink">Engagement Cakes</a></li>
+
+						<li class="rightInLink"><a href="bride.html" class="rightLink">Bridal Shower</a></li>
+
+						<li class="rightInLink"><a href="groom.html" class="rightLink">Groom Shower</a></li>
+
+						<li class="rightInLink"><a href="wed.html" class="rightLink">Wedding Cakes</a></li>
+					</ul>
+				</li>
+
+				<li class="rightList">
+					<a href="map.html" class="righxtLink">Site Map</a>
+				</li>
+			</ul>
+			
+		</div>
+
+	</nav>
+
+	<div class="first">
+		
+		<img src="Picture1.jpg" width="100%">
+	</div>
+
+</body>
+</html>
